@@ -5,7 +5,13 @@
   "spacing": 5,
   "modules-left": ["clock"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network", "pulseaudio", "battery"],
+  "modules-right": ["cpu", "network", "pulseaudio", "battery"],
+
+  "cpu": {
+    "interval": 10,
+    "format": "{usage}%   |",
+    "max-length": 10,
+  },
 
   "battery": {
     "format": "{capacity}% {icon}",
