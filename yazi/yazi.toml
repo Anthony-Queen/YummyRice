@@ -33,6 +33,7 @@ rules = [
 	{ mime = "video/*", use = "play" },
 
 	{ url = "*.html", use = [ "open", "edit" ] },
+	{ url = "*.jsonc", use = "edit" },
 ]
 
 

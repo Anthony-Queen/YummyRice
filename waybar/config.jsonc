@@ -3,23 +3,34 @@
   "position": "top",
   "height": 0,
   "spacing": 5,
-  "modules-left": ["clock"],
+  "modules-left": ["clock", "custom/music"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": ["cpu", "network", "pulseaudio", "battery"],
+
+  "custom/music": {
+  "format": "|  Now playing: {}",
+  "exec": "playerctl --player=termusic metadata --format '{{artist}} - {{title}}'",
+  "interval": 1,
+  "max-length": 50,
+  "on-click": "playerctl play-pause",
+  "on-scroll-up": "playerctl next",
+  "on-scroll-down": "playerctl previous",
+  "escape": true
+},
 
   "cpu": {
     "interval": 10,
     "format": "{usage}%   |",
-    "max-length": 10,
+    "max-length": 10
   },
 
   "battery": {
     "format": "{capacity}% {icon}",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": ["", "", "", "", ""]
   },
 
   "clock": {
-    "format-alt": "{:%a, %d. %b  %H:%M}",
+    "format-alt": "{:%a, %d. %b  %H:%M}"
   },
 
   "pulseaudio": {
@@ -36,11 +47,11 @@
       "phone-muted": "",
       "portable": "",
       "car": "",
-      "default": ["", ""],
+      "default": ["", ""]
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
-    "ignored-sinks": ["Easy Effects Sink"],
+    "ignored-sinks": ["Easy Effects Sink"]
   },
 
   "network": {
@@ -53,16 +64,16 @@
     "tooltip-format-wifi": "{essid} {signalStrength}% ",
     "tooltip-format-ethernet": "{ifname} ",
     "tooltip-format-disconnected": "Disconnected",
-    "max-length": 50,
+    "max-length": 50
   },
 
   "hyprland/window": {
     "format": "{}",
     "max-length": 35,
     "rewrite": {
-      "": "Harsh",
+      "": "Harsh"
     },
-    "separate-outputs": true,
+    "separate-outputs": true
   },
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -81,12 +92,12 @@
       "urgent": "",
       "persistent": "",
       "focused": "",
-      "default": "",
+      "default": ""
     },
     "sort-by-number": true,
     "persistent-workspaces": {
       "*": 9,
-      "DP-1": 9,
-    },
-  },
+      "DP-1": 9
+    }
+  }
 }

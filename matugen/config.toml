@@ -28,6 +28,9 @@ output_path = '~/.config/wlogout/colors.css'
 input_path = "./templates/colors.css"
 output_path = "~/.config/wofi/colors.css"
 
+[config]
 
-
-
+[templates.dunst]
+input_path = './templates/colors.css'
+output_path = '~/.config/dunst/dunstrc'
+post_hook = 'dunstctl reload'

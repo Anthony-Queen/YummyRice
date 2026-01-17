@@ -1,0 +1,20 @@
+@import "/home/anthony/.config/wofi/colors.css";
+
+window {
+    font-size: 20px;
+    font-family: "BigBlueTerm437 Nerd Font";
+    color: @on_background;
+    background-color: @surface;
+    border: 2px solid @surface_variant;
+}
+
+#input {
+    margin: 5px;
+    border: 2px solid @surface_variant;
+    background-color: @surface;
+    color: @on-background;
+}
+
+#entry:selected {
+    background-color: @surface_variant;
+}
