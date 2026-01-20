@@ -18,6 +18,13 @@
 -   Consistent UI across all components
 -   Smooth and responsive, tested on a T430S
 
+---
+
+## Installation
+```bash
+$ git clone https://github.com/Anthony-Queen/YummyRice
+$ cp -r ~/YummyRice/* ~/.config/
+---
 ##  Themed Components
 - **Hyprland**
 - **Waybar**
@@ -25,8 +32,7 @@
 - **Dunst**
 - **Wlogout**
 - **Kitty**
-
-All dynamically recolored using Matugen.
+```
 
 ---
 
