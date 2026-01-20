@@ -24,6 +24,8 @@
 ```bash
 $ git clone https://github.com/Anthony-Queen/YummyRice
 $ cp -r ~/YummyRice/* ~/.config/
+```
+
 ---
 ##  Themed Components
 - **Hyprland**
@@ -32,7 +34,6 @@ $ cp -r ~/YummyRice/* ~/.config/
 - **Dunst**
 - **Wlogout**
 - **Kitty**
-```
 
 ---
 
