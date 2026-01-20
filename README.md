@@ -1,4 +1,5 @@
 # YummyRice
+![Hackatime Badge](https://hackatime-badge.hackclub.com/U092CPW5N5N/dotfiles)
 # Wallpaper-Driven Hyprland Rice
 
 > **Change the wallpaper.**  
