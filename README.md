@@ -29,11 +29,6 @@ All dynamically recolored using Matugen.
 
 ---
 
-##  Stack
-Arch Linux • Hyprland • Matugen • Waybar • Wofi • Dunst • Kitty
-
----
-
 ##  Context
 Built for **Hack Club’s YSWS Riceathon**.
 
