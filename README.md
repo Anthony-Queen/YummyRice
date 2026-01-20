@@ -1,5 +1,5 @@
 # YummyRice
-#  Wallpaper-Driven Hyprland Rice
+# Wallpaper-Driven Hyprland Rice
 
 > **Change the wallpaper.**  
 > **Everything else follows.**
@@ -11,13 +11,13 @@
 
 ---
 
-## ⚡ Features
-- 🖼 **Wallpaper selector** as the source of truth
--  **Matugen theming across the entire system**
--  Consistent UI across all components
-- ⚡ Smooth and responsive, tested on a T430S
+##  Features
+-  **Wallpaper selector** as the source of truth
+-  **Matugen theming across the entire system**
+-   Consistent UI across all components
+-   Smooth and responsive, tested on a T430S
 
-##  Themed Components
+##  Themed Components
 - **Hyprland**
 - **Waybar**
 - **Wofi**
@@ -28,11 +28,11 @@ All dynamically recolored using Matugen.
 
 ---
 
-##  Stack
+##  Stack
 Arch Linux • Hyprland • Matugen • Waybar • Wofi • Dunst • Kitty
 
 ---
 
-##  Context
+##  Context
 Built for **Hack Club’s YSWS Riceathon**.
 
