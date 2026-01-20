@@ -23,6 +23,7 @@
 - **Waybar**
 - **Wofi**
 - **Dunst**
+- **Wlogout**
 - **Kitty**
 
 All dynamically recolored using Matugen.
