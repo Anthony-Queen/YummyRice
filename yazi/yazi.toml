@@ -37,6 +37,7 @@ rules = [
 ]
 
 
+
 [input]
 cursor_blink = true
 

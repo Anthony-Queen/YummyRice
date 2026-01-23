@@ -1,0 +1,21 @@
+# ONE-LINE CYBER PROMPT
+add_newline = true
+
+format = """
+$directory$git_branch$git_status
+$character
+"""
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold red"
+
