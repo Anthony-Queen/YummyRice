@@ -25,7 +25,7 @@
 
 ---
 ##  Dependencies
-
+-  Hyprland
 -  Kitty
 -  Wofi
 -  Swww
