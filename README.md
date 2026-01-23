@@ -11,8 +11,8 @@
   <img src="./screenshots/Wofi" width="45%">
 </p>
 <p>
-  <img src="./screenshots/WalSelector.png" width="45%">
-  <img src="./screenshots/Wofiv2.png" width="45%">
+  <img src="./screenshots/WalSelector" width="45%">
+  <img src="./screenshots/Wofiv2" width="45%">
 </p>
 
 ---
