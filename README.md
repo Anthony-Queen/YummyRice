@@ -24,6 +24,27 @@
 -   Smooth and responsive, tested on a T430S
 
 ---
+Dependencies
+
+-Kitty
+-Wofi
+-Swww
+-Waybar
+-Matugen
+-Ly greeter
+-Dunst
+-Fastfetch
+-Nvim
+-Wlogout
+-Yazi
+
+---
+Apps
+
+-Brave Browser
+-Zed Editor
+-Termusic
+---
 
 ## Installation
 ```bash
