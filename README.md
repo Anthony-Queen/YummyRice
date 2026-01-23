@@ -6,8 +6,11 @@
 > **Everything else follows.**
 
 
-<p align="center">
+<p>
   <img src="./screenshots/Setup.png" width="45%">
+  <img src="./screenshots/Wofi" width="45%">
+  <img src="./screenshots/WalSelector.png" width="45%">
+  <img src="./screenshots/Wofiv2.png" width="45%">
 </p>
 
 ---
