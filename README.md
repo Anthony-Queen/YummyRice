@@ -48,6 +48,8 @@
 
 ## Installation
 ```bash
+$ sudo pacman -S dunst fastfetch kitty ly matugen nvim termusic waybar wofi yazi
+$ yay -S wlogout
 $ git clone https://github.com/Anthony-Queen/YummyRice
 $ cp -r ~/YummyRice/* ~/.config/
 ```
