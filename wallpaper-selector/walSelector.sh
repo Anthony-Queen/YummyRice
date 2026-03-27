@@ -76,8 +76,8 @@ if [ -n "$selected" ]; then
 
     # Ensure a valid wallpaper was found before proceeding
     if [ -n "$original_path" ]; then
-        # Set wallpaper using swww with the original file
-        swww img "$original_path"
+        # Set wallpaper using awww with the original file
+        awww img "$original_path"
 	#Update Matugen 
 	matugen image "$original_path"
 
