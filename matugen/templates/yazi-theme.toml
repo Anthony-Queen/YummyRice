@@ -168,15 +168,15 @@ rules = [
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#f5c2e7" },
 
     # Documents
-    { mime = "application/{pdf,doc,rtf}", fg = "#a6e3a1" },
+    { mime = "application/{pdf,doc,rtf,txt}", fg = "#a6e3a1" },
 
     # Special files
-    { name = "*", is = "orphan", bg = "{{colors.error_container.default.hex}}" },
-    { name = "*", is = "exec", fg = "{{colors.on_error_container.default.hex}}" },
+    { mime = "*", is = "orphan", bg = "{{colors.error_container.default.hex}}" },
+    { url = "*.exe", is = "exec", fg = "{{colors.on_error_container.default.hex}}" },
 
     # Fallback
-    { name = "*", fg = "{{colors.on_surface.default.hex}}" },
-    { name = "*/", fg = "{{colors.surface_tint.default.hex}}" },
+    { mime = "*", fg = "{{colors.on_surface.default.hex}}" },
+    { mime = "*/", fg = "{{colors.surface_tint.default.hex}}" },
 ]
 
 # : ]]]
