@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Configuration
-WALLPAPER_DIR="$HOME/Wallpaper"  # Change this to your wallpaper directory
+WALLPAPER_DIR="$HOME/Wallpaper"
 CACHE_DIR="$HOME/.cache/wallpaper-selector"
 THUMBNAIL_WIDTH="250"  # Size of thumbnails in pixels (16:9)
 THUMBNAIL_HEIGHT="141"
@@ -79,7 +79,7 @@ if [ -n "$selected" ]; then
         # Set wallpaper using awww with the original file
         awww img "$original_path"
 	#Update Matugen 
-	matugen image "$original_path"
+	matugen image "$original_path" --source-color-index 0
 
         # Save the selection for persistence
         echo "$original_path" > "$HOME/.cache/current_wallpaper"
