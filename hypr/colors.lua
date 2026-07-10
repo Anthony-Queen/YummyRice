@@ -1,0 +1,104 @@
+return {
+    image = "/home/anthony/Wallpaper/Gachiakuta.png",
+
+    background = "0xff1a1110",
+
+    error = "0xffffb4ab",
+
+    error_container = "0xff93000a",
+
+    inverse_on_surface = "0xff392e2d",
+
+    inverse_primary = "0xff904a44",
+
+    inverse_surface = "0xfff1dedc",
+
+    on_background = "0xfff1dedc",
+
+    on_error = "0xff690005",
+
+    on_error_container = "0xffffdad6",
+
+    on_primary = "0xff561e1a",
+
+    on_primary_container = "0xffffdad6",
+
+    on_primary_fixed = "0xff3b0907",
+
+    on_primary_fixed_variant = "0xff73332e",
+
+    on_secondary = "0xff442927",
+
+    on_secondary_container = "0xffffdad6",
+
+    on_secondary_fixed = "0xff2c1513",
+
+    on_secondary_fixed_variant = "0xff5d3f3c",
+
+    on_surface = "0xfff1dedc",
+
+    on_surface_variant = "0xffd8c2bf",
+
+    on_tertiary = "0xff3f2e04",
+
+    on_tertiary_container = "0xfffedfa6",
+
+    on_tertiary_fixed = "0xff261900",
+
+    on_tertiary_fixed_variant = "0xff584419",
+
+    outline = "0xffa08c8a",
+
+    outline_variant = "0xff534341",
+
+    primary = "0xffffb4ab",
+
+    primary_container = "0xff73332e",
+
+    primary_fixed = "0xffffdad6",
+
+    primary_fixed_dim = "0xffffb4ab",
+
+    scrim = "0xff000000",
+
+    secondary = "0xffe7bdb8",
+
+    secondary_container = "0xff5d3f3c",
+
+    secondary_fixed = "0xffffdad6",
+
+    secondary_fixed_dim = "0xffe7bdb8",
+
+    shadow = "0xff000000",
+
+    source_color = "0xffa11e1d",
+
+    surface = "0xff1a1110",
+
+    surface_bright = "0xff423735",
+
+    surface_container = "0xff271d1c",
+
+    surface_container_high = "0xff322826",
+
+    surface_container_highest = "0xff3d3231",
+
+    surface_container_low = "0xff231918",
+
+    surface_container_lowest = "0xff140c0b",
+
+    surface_dim = "0xff1a1110",
+
+    surface_tint = "0xffffb4ab",
+
+    surface_variant = "0xff534341",
+
+    tertiary = "0xffe0c38c",
+
+    tertiary_container = "0xff584419",
+
+    tertiary_fixed = "0xfffedfa6",
+
+    tertiary_fixed_dim = "0xffe0c38c",
+
+}
