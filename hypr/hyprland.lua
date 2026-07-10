@@ -39,7 +39,7 @@ local editor = "zeditor"
 
 local wallpaper = "~/.config/wallpaper-selector/walSelector.sh"
 
-local screenshot = "grim -g $(slurp)-| wl-copy"
+local screenshot = 'grim -g "$(slurp)" - | wl-copy'
 
 --################
 
@@ -146,7 +146,7 @@ hl.config({
 })
 
 -- https://wiki.hypr.land/Configuring/Variables/#animations
-
+--[[
 hl.config({
     animations = {
         enabled = true,
@@ -167,7 +167,7 @@ hl.config({
         },
     },
 })
-
+]]
 -- See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
 
 hl.config({
@@ -260,11 +260,11 @@ hl.bind(mainMod .. " + " .. "Z", hl.dsp.exec_cmd("zeditor"))
 
 hl.bind(mainMod .. " + " .. "G", hl.dsp.exec_cmd("godot"))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.exec_cmd("grim -g $(slurp)-| wl-copy"))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "S", hl.dsp.exec_cmd(screenshot))
 
 hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "H", hl.dsp.exec_cmd("kitty -e htop"))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "W", hl.dsp.exec_cmd("~/.config/wallpaper-selector/walSelector.sh"))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "W", hl.dsp.exec_cmd(wallpaper))
 
 -- Move focus with mainMod + arrow keys
 
