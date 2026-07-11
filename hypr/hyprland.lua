@@ -19,11 +19,9 @@ hl.monitor({
     scale    = "auto",
 })
 
---##################
 
 --## MY PROGRAMS ###
 
---##################
 
 local mainMod = "SUPER"
 
@@ -41,21 +39,25 @@ local wallpaper = "~/.config/wallpaper-selector/walSelector.sh"
 
 local screenshot = 'grim -g "$(slurp)" - | wl-copy'
 
---################
 
 --## AUTOSTART ###
 
---################
+
+
+hl.on("hyprland.start", function()
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE")
+    hl.exec_cmd("matugen image ~/dotfiles/Wallpaper")
+    hl.exec_cmd("awww-daemon")
+    hl.exec_cmd("waybar")
+end)
 
 
 
 
 
---############################
 
 --## ENVIRONMENT VARIABLES ###
 
---############################
 
 hl.env("XCURSOR_SIZE", 24)
 
@@ -69,35 +71,9 @@ hl.env("XDG_DESKTOP_PORTAL_DIR", "")
 
 hl.env("GTK_USE_PORTAL", 1)
 
---##################
-
---## PERMISSIONS ###
-
---##################
-
--- See https://wiki.hypr.land/Configuring/Permissions/
-
--- Please note permission changes here require a Hyprland restart and are not applied on-the-fly
-
--- for security reasons
-
--- ecosystem {
-
---   enforce_permissions = 1
-
--- }
-
--- permission = /usr/(bin|local/bin)/grim, screencopy, allow
-
--- permission = /usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland, screencopy, allow
-
--- permission = /usr/(bin|local/bin)/hyprpm, plugin, allow
-
---####################
 
 --## LOOK AND FEEL ###
 
---####################
 
 -- Refer to https://wiki.hypr.land/Configuring/Variables/
 
@@ -146,7 +122,7 @@ hl.config({
 })
 
 -- https://wiki.hypr.land/Configuring/Variables/#animations
---[[
+
 hl.config({
     animations = {
         enabled = true,
@@ -167,7 +143,7 @@ hl.config({
         },
     },
 })
-]]
+
 -- See https://wiki.hypr.land/Configuring/Dwindle-Layout/ for more
 
 hl.config({
@@ -197,11 +173,9 @@ hl.config({
     },
 })
 
---############
 
 --## INPUT ###
 
---############
 
 -- https://wiki.hypr.land/Configuring/Variables/#input
 
@@ -222,11 +196,9 @@ hl.config({
 })
 
 
---##################
+--### KEYBINDINGS ###
 
---## KEYBINDINGS ###
 
---##################
 
 -- See https://wiki.hypr.land/Configuring/Keywords/
 
@@ -356,11 +328,8 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tru
 
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
---#############################
-
 --## WINDOWS AND WORKSPACES ###
 
---#############################
 
 -- See https://wiki.hypr.land/Configuring/Window-Rules/ for more
 
@@ -407,10 +376,10 @@ hl.window_rule({
     opacity = "0.9",
 })
 
--- Autostart
-hl.on("hyprland.start", function()
-    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE")
-    hl.exec_cmd("matugen image ~/dotfiles/Wallpaper")
-    hl.exec_cmd("awww-daemon")
-    hl.exec_cmd("waybar")
-end)
+
+
+
+
+
+
+
